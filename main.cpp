@@ -3,6 +3,7 @@
 #include <vector>
 #include <cmath>
 #include <time.h>
+
 using namespace std;
 
 bool isPrime(int);
@@ -26,7 +27,7 @@ bool isPrime(int num){
 
     string strNum = to_string(num);
     if(!(strNum.back() == '1' || strNum.back() == '3' || strNum.back() == '7' || strNum.back() == '9')) {return false;}
-    
+
     vector<int> listPrimes;
     bool tempIsPrime = true;
     listPrimes.push_back(2);
