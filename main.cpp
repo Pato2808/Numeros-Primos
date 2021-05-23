@@ -38,7 +38,7 @@ bool isPrime(int num){
                 tempIsPrime = false;
                 break;
             }
-            if(listPrimes[j] > floor(sqrt(num))){
+            if(listPrimes[j] > floor(sqrt(num)) + 1){
                 break;
             }
         }
