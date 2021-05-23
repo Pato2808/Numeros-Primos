@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <fstream>
+#include <cmath>
 #include <time.h>
 using namespace std;
 
@@ -38,7 +38,7 @@ bool isPrime(int num){
                 tempIsPrime = false;
                 break;
             }
-            if(listPrimes[j] > num/2+1){
+            if(listPrimes[j] > floor(sqrt(num))){
                 break;
             }
         }
